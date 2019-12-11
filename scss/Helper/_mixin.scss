@@ -1,0 +1,13 @@
+@mixin createButton($color,$bg,$paddingY,$paddingX,$border-color){
+    color: $color;
+    background-color: $bg;
+    padding: $paddingY $paddingX;
+    border: 1px solid $border-color;
+    transition: all .5s;
+}
+
+@mixin text($color,$fs,$fw) {
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}

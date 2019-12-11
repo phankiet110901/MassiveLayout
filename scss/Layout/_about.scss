@@ -1,0 +1,52 @@
+.about{
+    padding: $pd-5 0;
+    .content__detailText{
+        h2{
+            @include text($color-black-1,$fs-5,$fw-normal);
+            text-transform: uppercase;
+        }
+        p{
+            color: $color-grey-1;
+            padding: $pd-3 0 $pd-5 0;
+        }
+    }
+    .mySkill{
+        .skill__item{
+            &:hover{
+                span{
+                    background-color: $color-yellow-1;
+                }
+            }
+            .item__detail{
+                border: 1px solid $color-grey-8;
+                border-radius: 5px;
+                position: relative;
+                padding: $pd-3;
+            }
+            h4{
+                text-transform: uppercase;
+                @include text($color-black-1,$fs-3,$fw-normal);
+                padding: $pd-3 - 10 0 ;
+            }
+            p{
+                margin: 0;
+                color: $color-grey-1;
+            }
+            .showLogo{
+                position: absolute;
+                top:-30px;
+                left: 30px;
+            }
+            span{
+                width: 60px;
+                height: 60px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            i{
+                @include text($color-white-1,$fs-5,$fw-bold);
+            }
+        }
+    }
+}

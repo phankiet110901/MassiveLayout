@@ -1,0 +1,105 @@
+.myExperience{
+    padding: $pd-4 0;
+    .content{
+        background-image: url('../img/bgSkill.jpg');
+        min-height: 500px;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        .content__left{
+            height: 500px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            h3{
+                @include text($color-white-1,$fs-5,$fw-normal);
+                letter-spacing:  6px;
+                display: block;
+                align-self: center;
+            }
+        }
+        .content__right{
+            height: 500px;
+            background-color: rgba(0, 0, 0, .5);
+            padding-top: $pd-2;
+            padding-left: $pd-5;
+            padding-right: $pd-5;
+            h4{
+                @include text($color-white-1,$fs-3,$fw-normal);
+                padding-bottom:$pd-3;
+            }
+            p{
+                @include text($color-white-1,$fs-1,$fw-normal);
+            }
+            .skillBar{
+                width: 500px;
+                .barProcess{
+                    height: 20px;
+                    width: 100%;
+                    background-color:$color-grey-10;
+                    position: relative;
+                    &::before{
+                        content: "";
+                        width: 0;
+                        height: 100%;
+                        display: block;
+                        background-color: $color-white-1;
+                    }
+                }
+                .numberProcess{
+                    width: 0;
+                    text-align: right;
+                    transition: all .5s;
+                    span{
+                        color: $color-black-2;
+                        background-color: $color-grey-2;
+                        position: relative;
+                        &::after{
+                            content: "";
+                            height: 5px;
+                            width: 5px;
+                            background-color:  $color-grey-2;;
+                            bottom:-2px;
+                            display: block;
+                            left: 40%;
+                            transform: rotate(45deg);
+                            position: absolute;
+                        }
+                    }
+                    
+                }
+                .barCol{
+                    &::before{
+                        content: "HTML / CSS / JQUERY";
+                        width: 80%;
+                    }
+                }
+                .numberSkill{
+                    width: 80%;
+                }
+
+                .barCol2{
+                    &::before{
+                        content: "PHOTOSHOP";
+                        width: 90%;
+                    }
+                }
+                .numberSkill2{
+                    width: 90%;
+                }
+                
+                .barCol3{
+                    &::before{
+                        content: "GRAPHIC DESIGN";
+                        width: 75%;
+                    }
+                }
+                .numberSkill3{
+                    width: 75%;
+                }
+
+            }
+        }
+    }
+}

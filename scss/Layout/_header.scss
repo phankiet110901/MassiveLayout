@@ -1,0 +1,24 @@
+header{
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    .navbar{
+        padding: 0 1rem;
+        .logo{
+            img{
+                height: 70px;
+            }
+        }
+        .nav__content{
+            justify-content: flex-end;
+            .nav-link{
+                @include text($color-black-1,$fs-2,$fw-normal);
+            }
+            .nav-item.active{
+                .nav-link{
+                    @include text($color-yellow-1,$fs-2,$fw-normal);
+                }
+            }
+        }
+    }
+}

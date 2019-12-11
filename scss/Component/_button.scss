@@ -1,0 +1,31 @@
+.btn-black{
+    @include createButton($color-white-1,$color-black-2,$pd-6,$pd-3,transparent);
+    &:hover{
+        color: $color-white-1;
+        background-color: $color-yellow-1;
+    }
+}
+
+.btn-white{
+    @include createButton($color-black-2,$color-white-1,$pd-6,$pd-3,$color-black-2);
+    &:hover{
+        color: $color-white-1;
+        background-color: $color-black-2;
+    }
+}
+
+.btn-grey{
+    @include createButton($color-white-1,$color-grey-3,$pd-6,$pd-3,transparent);
+    &:hover{
+        color: $color-white-1;
+        background-color: $color-yellow-1;
+    }
+}
+
+.btn-grey-small{
+    @include createButton($color-white-1,$color-grey-3,$pd-4,$pd-3 -10,transparent);
+    &:hover{
+        color: $color-white-1;
+        background-color: $color-yellow-1;
+    }
+}
