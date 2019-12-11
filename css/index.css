@@ -56,11 +56,12 @@ body {
 header {
   position: fixed;
   z-index: 9999;
-  width: 100%; }
+  width: 100%;
+  transition: all .5s; }
   header .navbar {
     padding: 0 1rem; }
     header .navbar .logo img {
-      height: 70px; }
+      height: 100px; }
     header .navbar .nav__content {
       justify-content: flex-end; }
       header .navbar .nav__content .nav-link {

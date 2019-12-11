@@ -2,11 +2,13 @@ header{
     position: fixed;
     z-index: 9999;
     width: 100%;
+    transition: all .5s;
+    //background-color: $color-white-1;
     .navbar{
         padding: 0 1rem;
         .logo{
             img{
-                height: 70px;
+                height: 100px;
             }
         }
         .nav__content{
@@ -21,4 +23,5 @@ header{
             }
         }
     }
+
 }

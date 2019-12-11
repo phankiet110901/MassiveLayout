@@ -24,7 +24,7 @@
 
 <body>
     <!-- layout -->
-    <header>
+    <header class = "myHeader">
         <nav class="navbar navbar-expand-lg navbar-light">
             <!-- logo -->
             <div class="logo"><a class="navbar-brand" href="#"><img src="./img/logo.png" alt=""></a></div>
@@ -258,6 +258,19 @@
     <script src="./js/wow.min.js"></script>
     <script>
         new WOW().init();
+    </script>
+
+    <!-- script for header -->
+    <script>
+       $(window).scroll(function(){
+           if($(window).scrollTop() > 2){
+                $(".myHeader").css("background-color","white");
+                $(".logo img").css("height",70);
+           }else{
+                $(".myHeader").css("background-color","transparent");
+                $(".logo img").css("height",100);
+           }
+       });
     </script>
 </body>
 
