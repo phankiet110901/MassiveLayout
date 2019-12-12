@@ -74,70 +74,64 @@ header {
         font-weight: 400; }
 
 .carousel {
-  width: 100%; }
-  .carousel .item__detail img {
-    position: relative;
-    width: 100%; }
-  .carousel .item__detail .detail__text {
-    position: absolute;
+  width: 100%;
+  font-family: "Source Sans Pro", sans-serif; }
+  .carousel .carousel__text {
     top: 40%;
-    left: 50%;
-    transform: translate(-50%);
-    transition: all .5s; }
-    .carousel .item__detail .detail__text h2 {
+    text-align: left; }
+    .carousel .carousel__text h2 {
       text-transform: uppercase;
-      padding-bottom: 30px; }
-      .carousel .item__detail .detail__text h2 span {
-        color: #323232;
+      letter-spacing: 3px;
+      margin-bottom: 30px;
+      color: #333;
+      font-size: 36px;
+      font-weight: 400; }
+      .carousel .carousel__text h2 span {
+        color: #333;
         font-size: 18px;
-        font-weight: 400; }
-    .carousel .item__detail .detail__text p {
+        font-weight: 400;
+        margin-bottom: 15px;
+        display: inline-block; }
+    .carousel .carousel__text p {
+      color: #7e7e7e;
+      font-size: 15px;
+      font-weight: 400;
       line-height: 30px; }
-  .carousel .item__detail .detail__text3 {
-    color: #fff; }
-    .carousel .item__detail .detail__text3 h2 {
-      padding-bottom: 30px; }
-      .carousel .item__detail .detail__text3 h2 span {
+  .carousel .carousel__text3 {
+    top: 40%;
+    text-align: left; }
+    .carousel .carousel__text3 h2 {
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 30px;
+      color: #fff;
+      font-size: 36px;
+      font-weight: 400; }
+      .carousel .carousel__text3 h2 span {
         color: #fff;
         font-size: 18px;
-        font-weight: 400; }
-  .carousel .carousel__btnPrev {
-    background-color: red;
-    display: block;
-    width: 40%;
-    height: 50%;
-    position: absolute;
-    top: 20%;
-    left: 0;
-    opacity: 0; }
-    .carousel .carousel__btnPrev:hover {
-      cursor: url("../img/arrow_left.png"), auto; }
-  .carousel .carousel__btnNext {
-    background-color: red;
-    display: block;
-    width: 40%;
-    height: 50%;
-    position: absolute;
-    top: 20%;
-    right: 0;
-    opacity: 0; }
-    .carousel .carousel__btnNext:hover {
-      cursor: url("../img/arrow_right.png"), auto; }
-  .carousel .owl-theme .owl-dots {
-    position: absolute;
-    left: 50%;
-    bottom: 20%; }
-    .carousel .owl-theme .owl-dots button {
-      background-color: transparent;
+        font-weight: 400;
+        margin-bottom: 15px;
+        display: inline-block; }
+    .carousel .carousel__text3 p {
+      color: #fff;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 30px; }
+  .carousel .carousel-indicators {
+    bottom: 15%; }
+    .carousel .carousel-indicators li {
       height: 10px;
       width: 10px;
-      border: 1px solid #fff;
-      border-radius: 50%;
-      margin: 0 3px; }
-      .carousel .owl-theme .owl-dots button span {
-        display: none; }
-  .carousel .owl-theme button.active {
-    background-color: #fff; }
+      border-radius: 50%; }
+  .carousel .carousel-control-prev {
+    cursor: url("../img/arrow_left.png"), auto; }
+    .carousel .carousel-control-prev .carousel-control-prev-icon {
+      display: none; }
+  .carousel .carousel-control-next {
+    cursor: url("../img/arrow_right.png"), auto; }
+    .carousel .carousel-control-next .carousel-control-next-icon {
+      display: none; }
 
 .about {
   padding: 60px 0; }
