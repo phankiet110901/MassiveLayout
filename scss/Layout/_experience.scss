@@ -32,74 +32,59 @@
             p{
                 @include text($color-white-1,$fs-1,$fw-normal);
             }
-            .skillBar{
-                width: 500px;
-                .barProcess{
-                    height: 20px;
-                    width: 100%;
-                    background-color:$color-grey-10;
-                    position: relative;
-                    &::before{
-                        content: "";
-                        width: 0;
-                        height: 100%;
-                        display: block;
-                        background-color: $color-white-1;
+           .wapperBar{
+               width: 80%;
+                .bar{
+                    .processBar{
+                        height: 20px;
+                        width: 100%;
+                        background-color: $color-grey-10;
+                        position: relative;
                     }
-                }
-                .numberProcess{
-                    width: 0;
-                    text-align: right;
-                    transition: all .5s;
-                    span{
-                        color: $color-black-2;
+                    // con cua processBar
+                    .skillBar{
+                        height: 20px;
+                        width: 20%;
+                        background-color: $color-white-1;
+                        position: absolute;
+                        top:0;
+                        left:0;
+                        display: flex;
+                        align-items: center;
+                        transition: all 1s;
+                    }
+                    //con cua skillBar
+                    .skillText{
+                        text-transform: uppercase;
+                        @include text($color-black-2,$fs-6,$fw-normal);
+                        padding-left: $pd-4;
+                    }
+                    .numberProcessBar{
+                        width: 20%;
+                        text-align: right;
+                        padding-bottom: 5px;
+                        transition: all 1s;
+                    }
+                    // con cua numnberProcess
+                    .skillNumber{
                         background-color: $color-grey-2;
                         position: relative;
-                        &::after{
-                            content: "";
-                            height: 5px;
-                            width: 5px;
-                            background-color:  $color-grey-2;;
-                            bottom:-2px;
-                            display: block;
-                            left: 40%;
-                            transform: rotate(45deg);
-                            position: absolute;
-                        }
+                        padding: 4px 8px;
+                        border-radius: 10px;
+                        @include text($color-black-2,$fs-6,$fw-normal);
                     }
-                    
-                }
-                .barCol{
-                    &::before{
-                        content: "HTML / CSS / JQUERY";
-                        width: 80%;
+                    //con cua skillNumber
+                    .numberProcessBar__footer{
+                        height: 5px;
+                        width: 5px;
+                        background-color: $color-grey-2;
+                        position: absolute;
+                        bottom:-2px;
+                        left:40%;
+                        transform: rotate(45deg);
                     }
                 }
-                .numberSkill{
-                    width: 80%;
-                }
-
-                .barCol2{
-                    &::before{
-                        content: "PHOTOSHOP";
-                        width: 90%;
-                    }
-                }
-                .numberSkill2{
-                    width: 90%;
-                }
-                
-                .barCol3{
-                    &::before{
-                        content: "GRAPHIC DESIGN";
-                        width: 75%;
-                    }
-                }
-                .numberSkill3{
-                    width: 75%;
-                }
-
-            }
+           }
         }
     }
 }

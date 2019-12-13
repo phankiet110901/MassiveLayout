@@ -182,31 +182,52 @@
                         always
                         up for a massive challenge <br> forever.
                     </p>
-                    <div class="skillBar">
-                        <!-- first bar -->
-                        <div class="processBar">
-                            <div class="bar">
-                                <div class="numberProcess numberSkill">
-                                    <span>80%</span>
-                                </div>
-                                <div class="barCol barProcess"></div>
-                            </div>
-                        </div>
-                        <!-- second bar -->
-                        <div class="processBar">
-                            <div class="bar">
-                                <div class="numberProcess numberSkill2">
-                                    <span>90%</span>
-                                </div>
-                                <div class="barProcess barCol2"></div>
-                            </div>
-                        </div>
-                        <!-- third bar -->
+
+                    <div class="wapperBar">
+                        <!-- bar -->
                         <div class="bar">
-                            <div class="numberProcess numberSkill3">
-                                <span>75%</span>
+                            <div class="numberProcessBar">
+                                <span class="skillNumber">
+                                    80%
+                                    <div class="numberProcessBar__footer"></div>
+                                </span>
+
                             </div>
-                            <div class="barProcess barCol3"></div>
+                            <div class="processBar">
+                                <div class="skillBar" data-percent="80%">
+                                    <span class="skillText">html / css / jquery</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- bar -->
+                        <div class="bar">
+                            <div class="numberProcessBar number2">
+                                <span class="skillNumber">
+                                    90%
+                                    <div class="numberProcessBar__footer"></div>
+                                </span>
+
+                            </div>
+                            <div class="processBar">
+                                <div class="skillBar skill2">
+                                    <span class="skillText">photoshop</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- bar -->
+                        <div class="bar">
+                            <div class="numberProcessBar number3">
+                                <span class="skillNumber">
+                                    75%
+                                    <div class="numberProcessBar__footer"></div>
+                                </span>
+
+                            </div>
+                            <div class="processBar">
+                                <div class="skillBar skill3">
+                                    <span class="skillText">graphic design</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -275,6 +296,27 @@
             } else {
                 $(".myHeader").css("background-color", "transparent");
                 $(".logo img").css("height", 100);
+            }
+        });
+    </script>
+    <!-- script for skill bar -->
+    <script>
+        var offsetTop = $('.bar').offset().top; // lay vi tri cua bar
+        $(window).scroll(function () {
+            var height = $(window).height(); // height cua man hinh
+            // lay vi tri hien tai khi scroll = height + scrollTop
+            // neu nguoi dung scroll toi bar
+            // chinh width ve do dai thich hop
+            if ($(window).scrollTop() + height > offsetTop) {
+                // bar thu nhat
+                $(".skillBar").css("width", "80%");
+                $(".numberProcessBar").css("width", "80%");
+                // bar thu hai
+                $(".skillBar.skill2").css("width", "90%");
+                $(".numberProcessBar.number2").css("width", "90%");
+                // bar thu ba
+                $(".skillBar.skill3").css("width", "75%");
+                $(".numberProcessBar.number3").css("width", "75%");
             }
         });
     </script>
