@@ -1,0 +1,78 @@
+.myTeam{
+    background-color: $color-white-3;
+    padding-bottom: $pd-2;
+    .myTeam__text{
+        padding-bottom: $pd-2;
+        h3{
+            @include text($color-black-1,$fs-5,$fw-normal);
+            letter-spacing: 2px;
+            padding-top:$pd-2;
+        }
+        p{
+            @include text($color-grey-1,$fs-1,$fw-normal);
+            padding-top: $pd-3;
+        }
+    }
+    .myTeam__content{
+        .content__item{
+            .item__img{
+                position: relative;
+                &:hover{
+                    .item__hover{
+                        opacity: 1;
+                        .content__top,.content__bottom{
+                            transform: translateY(0);
+                        }
+                    }
+                }
+                img{
+                    width: 100%;
+                }
+                .item__title{
+                    text-align: right;
+                    background-color: $color-black-3;
+                    position: absolute;
+                    right: 0;
+                    bottom: 25px;
+                    padding: $pd-4 $pd-3 $pd-4 $pd-2;
+                    p{
+                        margin: 0;
+                        text-transform: uppercase;
+                    }
+                    .title__name{
+                        @include text($color-white-1,$fs-1,$fw-normal);
+                    }
+                    .title__job{
+                        @include text($color-grey-1,$fs-1,$fw-normal);
+                    }
+                }
+                // con cua item__hover
+                .content__top{
+                    transform: translateY(-50px);
+                    transition: all .5s;
+                    .top__title{
+                        @include text($color-black-2,$fs-2 +1,$fw-normal);
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                        padding: $pd-3+20 0;
+                    }
+                    .top__text{
+                        @include text($color-grey-1,$fs-2 +1,$fw-normal);
+                        line-height: 25px;
+                        padding: 0 $pd-4;
+                    }
+                }
+                //con cua item__hover
+                .content__bottom{
+                    transform: translateY(50px);
+                    padding-top:$pd-2+20;
+                    transition: all .5s;
+                    i{
+                        @include text($color-black-6,$fs-3,$fw-normal);
+                        padding: 0 $pd-4;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -9,6 +9,9 @@ body {
   font-size: 15px;
   font-weight: 400; }
 
+p, h4 {
+  margin: 0; }
+
 .row {
   margin-left: 0;
   margin-right: 0; }
@@ -52,6 +55,18 @@ body {
   .btn-grey-small:hover {
     color: #fff;
     background-color: #d6b161; }
+
+.item__hover {
+  opacity: 0;
+  transition: all .5s;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 20px solid #a9a8a8;
+  text-align: center; }
 
 header {
   position: fixed;
@@ -174,85 +189,151 @@ header {
     font-size: 24px;
     font-weight: 700; }
 
-.myExperience {
-  padding: 10px 0; }
-  .myExperience .content {
-    background-image: url("../img/bgSkill.jpg");
-    min-height: 500px;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; }
-    .myExperience .content .content__left {
-      height: 500px;
-      display: flex;
-      justify-content: space-around;
-      align-items: center; }
-      .myExperience .content .content__left h3 {
-        color: #fff;
-        font-size: 24px;
+.myExperience .content {
+  background-image: url("../img/bgSkill.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  .myExperience .content .content__left {
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .myExperience .content .content__left h3 {
+      color: #fff;
+      font-size: 24px;
+      font-weight: 400;
+      letter-spacing: 6px;
+      display: block;
+      align-self: center; }
+  .myExperience .content .content__right {
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 100px;
+    padding-left: 60px;
+    padding-right: 60px; }
+    .myExperience .content .content__right h4 {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 400;
+      padding-bottom: 30px; }
+    .myExperience .content .content__right p {
+      color: #fff;
+      font-size: 15px;
+      font-weight: 400; }
+    .myExperience .content .content__right .wapperBar {
+      width: 80%; }
+      .myExperience .content .content__right .wapperBar .bar .processBar {
+        height: 20px;
+        width: 100%;
+        background-color: #606060;
+        position: relative; }
+      .myExperience .content .content__right .wapperBar .bar .skillBar {
+        height: 20px;
+        width: 20%;
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        transition: all 1s; }
+      .myExperience .content .content__right .wapperBar .bar .skillText {
+        text-transform: uppercase;
+        color: #222;
+        font-size: 10px;
         font-weight: 400;
-        letter-spacing: 6px;
-        display: block;
-        align-self: center; }
-    .myExperience .content .content__right {
-      height: 500px;
-      background-color: rgba(0, 0, 0, 0.5);
-      padding-top: 100px;
-      padding-left: 60px;
-      padding-right: 60px; }
-      .myExperience .content .content__right h4 {
-        color: #fff;
-        font-size: 18px;
-        font-weight: 400;
-        padding-bottom: 30px; }
-      .myExperience .content .content__right p {
+        padding-left: 10px; }
+      .myExperience .content .content__right .wapperBar .bar .numberProcessBar {
+        width: 20%;
+        text-align: right;
+        padding-bottom: 5px;
+        transition: all 1s; }
+      .myExperience .content .content__right .wapperBar .bar .skillNumber {
+        background-color: #a4a4a4;
+        position: relative;
+        padding: 4px 8px;
+        border-radius: 10px;
+        color: #222;
+        font-size: 10px;
+        font-weight: 400; }
+      .myExperience .content .content__right .wapperBar .bar .numberProcessBar__footer {
+        height: 5px;
+        width: 5px;
+        background-color: #a4a4a4;
+        position: absolute;
+        bottom: -2px;
+        left: 40%;
+        transform: rotate(45deg); }
+
+.myTeam {
+  background-color: #f5f5f5;
+  padding-bottom: 100px; }
+  .myTeam .myTeam__text {
+    padding-bottom: 100px; }
+    .myTeam .myTeam__text h3 {
+      color: #333;
+      font-size: 24px;
+      font-weight: 400;
+      letter-spacing: 2px;
+      padding-top: 100px; }
+    .myTeam .myTeam__text p {
+      color: #7e7e7e;
+      font-size: 15px;
+      font-weight: 400;
+      padding-top: 30px; }
+  .myTeam .myTeam__content .content__item .item__img {
+    position: relative; }
+    .myTeam .myTeam__content .content__item .item__img:hover .item__hover {
+      opacity: 1; }
+      .myTeam .myTeam__content .content__item .item__img:hover .item__hover .content__top, .myTeam .myTeam__content .content__item .item__img:hover .item__hover .content__bottom {
+        transform: translateY(0); }
+    .myTeam .myTeam__content .content__item .item__img img {
+      width: 100%; }
+    .myTeam .myTeam__content .content__item .item__img .item__title {
+      text-align: right;
+      background-color: rgba(0, 0, 0, 0.7);
+      position: absolute;
+      right: 0;
+      bottom: 25px;
+      padding: 10px 30px 10px 100px; }
+      .myTeam .myTeam__content .content__item .item__img .item__title p {
+        margin: 0;
+        text-transform: uppercase; }
+      .myTeam .myTeam__content .content__item .item__img .item__title .title__name {
         color: #fff;
         font-size: 15px;
         font-weight: 400; }
-      .myExperience .content .content__right .wapperBar {
-        width: 80%; }
-        .myExperience .content .content__right .wapperBar .bar .processBar {
-          height: 20px;
-          width: 100%;
-          background-color: #606060;
-          position: relative; }
-        .myExperience .content .content__right .wapperBar .bar .skillBar {
-          height: 20px;
-          width: 20%;
-          background-color: #fff;
-          position: absolute;
-          top: 0;
-          left: 0;
-          display: flex;
-          align-items: center;
-          transition: all 1s; }
-        .myExperience .content .content__right .wapperBar .bar .skillText {
-          text-transform: uppercase;
-          color: #222;
-          font-size: 10px;
-          font-weight: 400;
-          padding-left: 10px; }
-        .myExperience .content .content__right .wapperBar .bar .numberProcessBar {
-          width: 20%;
-          text-align: right;
-          padding-bottom: 5px;
-          transition: all 1s; }
-        .myExperience .content .content__right .wapperBar .bar .skillNumber {
-          background-color: #a4a4a4;
-          position: relative;
-          padding: 4px 8px;
-          border-radius: 10px;
-          color: #222;
-          font-size: 10px;
-          font-weight: 400; }
-        .myExperience .content .content__right .wapperBar .bar .numberProcessBar__footer {
-          height: 5px;
-          width: 5px;
-          background-color: #a4a4a4;
-          position: absolute;
-          bottom: -2px;
-          left: 40%;
-          transform: rotate(45deg); }
+      .myTeam .myTeam__content .content__item .item__img .item__title .title__job {
+        color: #7e7e7e;
+        font-size: 15px;
+        font-weight: 400; }
+    .myTeam .myTeam__content .content__item .item__img .content__top {
+      transform: translateY(-50px);
+      transition: all .5s; }
+      .myTeam .myTeam__content .content__item .item__img .content__top .top__title {
+        color: #222;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding: 50px 0; }
+      .myTeam .myTeam__content .content__item .item__img .content__top .top__text {
+        color: #7e7e7e;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 25px;
+        padding: 0 10px; }
+    .myTeam .myTeam__content .content__item .item__img .content__bottom {
+      transform: translateY(50px);
+      padding-top: 120px;
+      transition: all .5s; }
+      .myTeam .myTeam__content .content__item .item__img .content__bottom i {
+        color: #323232;
+        font-size: 18px;
+        font-weight: 400;
+        padding: 0 10px; }
 
 /*# sourceMappingURL=index.css.map */
