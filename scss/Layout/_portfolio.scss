@@ -1,0 +1,39 @@
+.myPortfolio__content{
+    .nav-tabs{
+        border:none;
+        .nav-item{
+            .nav-link{
+                border:none;
+                text-transform: uppercase;
+                @include text($color-grey-5,$fs-1,$fw-normal);
+                letter-spacing: 2px;
+                transition: all .5s;
+                &:hover{
+                    @include text($color-black-6,$fs-1,$fw-normal);
+                }
+            }
+            .nav-link.active{
+                @include text($color-black-6,$fs-1,$fw-normal);
+            }
+        }
+    }
+    .tab__content{
+        padding: 0 $pd-4; 
+        padding-top: $pd-4;
+        .content__item{
+            .item__img{
+                background-color: red;
+                position: relative;
+                &:hover{
+                    .item__hover{
+                        opacity: 1;
+                        border-color:$color-black-5;
+                    }
+                }
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

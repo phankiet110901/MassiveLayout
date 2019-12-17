@@ -1,0 +1,12 @@
+.title{
+    @include text($color-black-1,$fs-5,$fw-normal);
+    letter-spacing: 2px;
+    padding-top:$pd-2;
+    padding-bottom:$pd-3;
+    text-transform: uppercase;
+}
+
+.subTitle{
+    @include text($color-grey-1,$fs-1,$fw-normal);
+    padding-bottom: $pd-2;
+}

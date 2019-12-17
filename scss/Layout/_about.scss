@@ -1,15 +1,5 @@
 .about{
-    padding: $pd-5 0;
-    .content__detailText{
-        h2{
-            @include text($color-black-1,$fs-5,$fw-normal);
-            text-transform: uppercase;
-        }
-        p{
-            color: $color-grey-1;
-            padding: $pd-3 0 $pd-5 0;
-        }
-    }
+    padding-bottom: $pd-5;
     .mySkill{
         .skill__item{
             &:hover{
