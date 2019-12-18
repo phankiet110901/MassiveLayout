@@ -1,0 +1,16 @@
+.banner{
+    background-color: $color-black-2;
+    text-transform: uppercase;
+    padding: $pd-5 0;
+    .content__detail{
+        p{
+            @include text($color-white-1,$fs-1,$fw-normal);
+        }
+        h3{
+            @include text($color-white-1,$fs-5,$fw-normal);
+            span{
+                @include text($color-yellow-1,$fs-5,$fw-normal);
+            }
+        }
+    }
+}

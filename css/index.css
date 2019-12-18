@@ -9,12 +9,15 @@ body {
   font-size: 15px;
   font-weight: 400; }
 
-p, h4 {
+p, h4, h3 {
   margin: 0; }
 
 .row {
   margin-left: 0;
   margin-right: 0; }
+
+.btn-black, .btn-white, .btn-grey, .btn-grey-small {
+  text-transform: uppercase; }
 
 .btn-black {
   color: #fff;
@@ -83,9 +86,12 @@ p, h4 {
   font-weight: 400;
   padding-bottom: 100px; }
 
+.title, .subTitle {
+  text-align: center; }
+
 header {
   position: fixed;
-  z-index: 9999;
+  z-index: 999;
   width: 100%;
   transition: all .5s; }
   header .navbar {
@@ -350,14 +356,97 @@ header {
     font-weight: 400; }
 .myPortfolio__content .tab__content {
   padding: 0 10px;
-  padding-top: 10px; }
-  .myPortfolio__content .tab__content .content__item .item__img {
-    background-color: red;
-    position: relative; }
-    .myPortfolio__content .tab__content .content__item .item__img:hover .item__hover {
-      opacity: 1;
-      border-color: rgba(0, 0, 0, 0.1); }
-  .myPortfolio__content .tab__content .content__item img {
-    width: 100%; }
+  padding-top: 60px; }
+  .myPortfolio__content .tab__content .content__item {
+    padding-bottom: 20px; }
+    .myPortfolio__content .tab__content .content__item .item__img {
+      position: relative; }
+      .myPortfolio__content .tab__content .content__item .item__img:hover .item__hover {
+        opacity: 1;
+        border-color: rgba(0, 0, 0, 0.1); }
+        .myPortfolio__content .tab__content .content__item .item__img:hover .item__hover .hover__top, .myPortfolio__content .tab__content .content__item .item__img:hover .item__hover .hover__bottom {
+          transform: translateY(0); }
+    .myPortfolio__content .tab__content .content__item img {
+      width: 100%; }
+    .myPortfolio__content .tab__content .content__item .text__hover {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #222;
+      font-size: 15px;
+      font-weight: 400;
+      text-decoration: none;
+      transition: all .5s; }
+      .myPortfolio__content .tab__content .content__item .text__hover:hover {
+        text-decoration: none;
+        color: #d6b161; }
+    .myPortfolio__content .tab__content .content__item .subText {
+      color: #757575;
+      font-size: 13px;
+      font-weight: 400;
+      padding-top: 10px;
+      display: inline-block; }
+    .myPortfolio__content .tab__content .content__item .porfolio__logo {
+      color: #333;
+      font-size: 36px;
+      font-weight: 400;
+      padding: 40px 0 20px 0;
+      display: block; }
+    .myPortfolio__content .tab__content .content__item .hover__top {
+      transform: translateY(-20px);
+      transition: all .5s; }
+    .myPortfolio__content .tab__content .content__item .hover__bottom {
+      transform: translateY(20px);
+      transition: all .5s; }
+
+.banner {
+  background-color: #222;
+  text-transform: uppercase;
+  padding: 60px 0; }
+  .banner .content__detail p {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400; }
+  .banner .content__detail h3 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400; }
+    .banner .content__detail h3 span {
+      color: #d6b161;
+      font-size: 24px;
+      font-weight: 400; }
+
+.services .wapper {
+  padding-right: 0 !important;
+  padding-left: 0 !important; }
+.services .item__detail {
+  padding: 50px;
+  border: 1px solid #f2f2f2;
+  transition: all .5s; }
+  .services .item__detail:hover {
+    background-color: #222; }
+    .services .item__detail:hover .item__icon {
+      color: #d6b161;
+      font-size: 36px;
+      font-weight: 400; }
+    .services .item__detail:hover h4 {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 400;
+      text-transform: uppercase; }
+  .services .item__detail .item__icon {
+    color: #333;
+    font-size: 36px;
+    font-weight: 400;
+    padding-bottom: 15px;
+    transition: all .5s; }
+  .services .item__detail .subTitle {
+    padding-bottom: 0;
+    padding-top: 20px; }
+  .services .item__detail h4 {
+    color: #333;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: all .5s; }
 
 /*# sourceMappingURL=index.css.map */

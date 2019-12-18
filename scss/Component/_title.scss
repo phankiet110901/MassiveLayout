@@ -10,3 +10,6 @@
     @include text($color-grey-1,$fs-1,$fw-normal);
     padding-bottom: $pd-2;
 }
+.title,.subTitle{
+    text-align: center;
+}

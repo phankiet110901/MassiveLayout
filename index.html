@@ -17,6 +17,8 @@
     <!-- link for owl carousel -->
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <!-- link for maganific popup -->
+    <link rel="stylesheet" href="./css/magnific-popup.css">
     <!-- link for css -->
     <link rel="stylesheet" href="./css/index.css">
     <title>One Page - bs slider</title>
@@ -347,72 +349,285 @@
             </p>
         </div>
         <div class="myPortfolio__content">
-            <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#all" role="tab">all</a>
+            <ul class="nav nav-tabs justify-content-center">
+                <li class="nav-item nav-all">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#all" role="tab"
+                        data-name="*">all</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#printing" role="tab">printing</a>
+                <li class="nav-item nav-printing">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#all" role="tab"
+                        data-name=".printing">printing</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#web" role="tab">web</a>
+                <li class="nav-item nav-web">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#all" role="tab"
+                        data-name=".web">web</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#illustration"
-                        role="tab">illustration</a>
+                <li class="nav-item nav-illustration">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#all" role="tab"
+                        data-name=".illustration">illustration</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#media" role="tab">media</a>
+                <li class="nav-item nav-media">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#all" role="tab"
+                        data-name=".media">media</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#crafts" role="tab">crafts</a>
+                <li class="nav-item nav-crafts">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#all" role="tab"
+                        data-name=".crafts">crafts</a>
                 </li>
             </ul>
             <div class="tab-content" id="myTabContent">
                 <!-- tab -->
                 <div class="tab-pane fade show active" id="all" role="tabpanel">
                     <div class="tab__content">
-                        <div class="row">
+                        <div class="row popup-gallery grid">
                             <!-- item -->
-                            <div class="content__item col-3">
+                            <div
+                                class="content__item col-12 col-sm-6 col-md-4 col-lg-3 grid-item printing illustration">
                                 <div class="item__img">
                                     <img src="./img/portfolio1.jpg" alt="">
+                                    <!-- hover -->
                                     <div class="item__hover">
-                                        <i class="fa fa-award"></i>
-                                        <p>light view</p>
-                                        <p>category</p>
+                                        <div class="hover__top">
+                                            <a href="./img/portfolio1.jpg" class="porfolio__logo img__popup" title=""><i
+                                                    class="fa fa-award"></i></a>
+                                        </div>
+                                        <div class="hover__bottom">
+                                            <p><a href="./img/portfolio1.jpg" class="text__hover img__popup2"
+                                                    title="">lightbox
+                                                    view</a></p>
+                                            <p><a href="" class="text__hover subText" title="">category</a></p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <!-- item -->
-                            <div class="content__item col-3">
-                                <img src="./img/portfolio2.jpg" alt="">
+                            <div class="content__item col-12 col-sm-6 col-md-4 col-lg-3 grid-item web media">
+                                <div class="item__img">
+                                    <img src="./img/portfolio2.jpg" alt="">
+                                    <!-- hover -->
+                                    <div class="item__hover">
+                                        <div class="hover__top">
+                                            <a href="./img/portfolio2.jpg" class="porfolio__logo img__popup"><i
+                                                    class="fa fa-award"></i></a>
+                                        </div>
+                                        <div class="hover__bottom">
+                                            <p><a href="./img/portfolio2.jpg" class="text__hover">lightbox view</a></p>
+                                            <p><a href="./img/portfolio2.jpg" class="text__hover subText">category</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- item -->
-                            <div class="content__item col-3">
-                                <img src="./img/portfolio3.jpg" alt="">
+                            <div class="content__item col-12 col-sm-6 col-md-4 col-lg-3 grid-item illustration crafts">
+                                <div class="item__img">
+                                    <img src="./img/portfolio3.jpg" alt="">
+                                    <!-- hover -->
+                                    <div class="item__hover">
+                                        <div class="hover__top">
+                                            <a href="./img/portfolio3.jpg" class="porfolio__logo"><i
+                                                    class="fa fa-award"></i></a>
+                                        </div>
+                                        <div class="hover__bottom">
+                                            <p><a href="./img/portfolio3.jpg" class="text__hover">lightbox view</a></p>
+                                            <p><a href="./img/portfolio3.jpg" class="text__hover subText">category</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- item -->
-                            <div class="content__item col-3">
-                                <img src="./img/portfolio4.jpg" alt="">
+                            <div class="content__item col-12 col-sm-6 col-md-4 col-lg-3 grid-item  printing web media">
+                                <div class="item__img">
+                                    <img src="./img/portfolio4.jpg" alt="">
+                                    <!-- hover -->
+                                    <div class="item__hover">
+                                        <div class="hover__top">
+                                            <a href="./img/portfolio4.jpg" class="porfolio__logo"><i
+                                                    class="fa fa-award"></i></a>
+                                        </div>
+                                        <div class="hover__bottom">
+                                            <p><a href="./img/portfolio4.jpg" class="text__hover">lightbox view</a></p>
+                                            <p><a href="./img/portfolio4.jpg" class="text__hover subText">category</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="content__item col-12 col-sm-6 col-md-4 col-lg-3 grid-item media">
+                                <div class="item__img">
+                                    <img src="./img/portfolio5.jpg" alt="">
+                                    <!-- hover -->
+                                    <div class="item__hover">
+                                        <div class="hover__top">
+                                            <a href="#" class="porfolio__logo"><i class="fa fa-award"></i></a>
+                                        </div>
+                                        <div class="hover__bottom">
+                                            <p><a href="#" class="text__hover">lightbox view</a></p>
+                                            <p><a href="#" class="text__hover subText">category</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div
+                                class="content__item col-12 col-sm-6 col-md-4 col-lg-3 grid-item printing illustration media crafts">
+                                <div class="item__img">
+                                    <img src="./img/portfolio6.jpg" alt="">
+                                    <!-- hover -->
+                                    <div class="item__hover">
+                                        <div class="hover__top">
+                                            <a href="#" class="porfolio__logo"><i class="fa fa-award"></i></a>
+                                        </div>
+                                        <div class="hover__bottom">
+                                            <p><a href="#" class="text__hover">lightbox view</a></p>
+                                            <p><a href="#" class="text__hover subText">category</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="content__item col-12 col-sm-6 col-md-4 col-lg-3 grid-item web crafts">
+                                <div class="item__img">
+                                    <img src="./img/portfolio7.jpg" alt="">
+                                    <!-- hover -->
+                                    <div class="item__hover">
+                                        <div class="hover__top">
+                                            <a href="#" class="porfolio__logo"><i class="fa fa-award"></i></a>
+                                        </div>
+                                        <div class="hover__bottom">
+                                            <p><a href="#" class="text__hover">lightbox view</a></p>
+                                            <p><a href="#" class="text__hover subText">category</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="content__item col-12 col-sm-6 col-md-4 col-lg-3 grid-item web crafts">
+                                <div class="item__img">
+                                    <img src="./img/portfolio8.jpg" alt="">
+                                    <!-- hover -->
+                                    <div class="item__hover">
+                                        <div class="hover__top">
+                                            <a href="#" class="porfolio__logo"><i class="fa fa-award"></i></a>
+                                        </div>
+                                        <div class="hover__bottom">
+                                            <p><a href="#" class="text__hover">lightbox view</a></p>
+                                            <p><a href="#" class="text__hover subText">category</a></p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- tab -->
-                <div class="tab-pane fade" id="printing" role="tabpanel">printing</div>
-                <div class="tab-pane fade" id="web" role="tabpanel">web</div>
-                <!-- tab -->
-                <div class="tab-pane fade" id="illustration" role="tabpanel">illustration</div>
-                <!-- tab -->
-                <div class="tab-pane fade" id="media" role="tabpanel">media</div>
-                <!-- tab -->
-                <div class="tab-pane fade" id="crafts" role="tabpanel">crafts</div>
             </div>
         </div>
     </section>
-    <section class="banner"></section>
-    <section class="services"></section>
+    <section class="banner">
+        <div class="banner__content container">
+            <div class="row content__detail">
+                <div class="col-md-8 col-12 col-lg-9">
+                    <p>ARE YOU IMPRESSED WITH OUR CREATIVE WORK?</p>
+                    <h3>START <span>BUILDING YOUR PROJECT</span> WITH MASSIVE</h3>
+                </div>
+                <div class="col-md-4 col-12 col-lg-3">
+                    <button class="btn btn-grey">Purchase now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <div class="services__content">
+            <h3 class="title">massive services</h3>
+            <p class="subTitle">
+                Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores
+                nemis omnis fugats vitaes <br> nemo minima rerums unsers sadips amets.</p>
+            <div class="content__item container">
+                <div class="row">
+                    <!-- item -->
+                    <div class="col-md-4 col-12 wapper wow zoomIn">
+                        <div class="item__detail text-center">
+                            <div class="item__icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <h4>Creative design</h4>
+                            <p class="subTitle">
+                                Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent
+                                sed nisi eleifend.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="col-md-4 col-12 wapper wow zoomIn">
+                        <div class="item__detail text-center">
+                            <div class="item__icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <h4>PROFESSIONAL CODE</h4>
+                            <p class="subTitle">
+                                Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent
+                                sed nisi eleifend.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="col-md-4 col-12 wapper wow zoomIn">
+                        <div class="item__detail text-center">
+                            <div class="item__icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <h4>EASY CUSTOMIZE</h4>
+                            <p class="subTitle">
+                                Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent
+                                sed nisi eleifend.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="col-md-4 col-12 wapper wow zoomIn">
+                        <div class="item__detail text-center">
+                            <div class="item__icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <h4>24/7 SUPPORT</h4>
+                            <p class="subTitle">
+                                Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent
+                                sed nisi eleifend.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="col-md-4 col-12 wapper wow zoomIn">
+                        <div class="item__detail text-center">
+                            <div class="item__icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <h4>BOOTSTRAP</h4>
+                            <p class="subTitle">
+                                Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent
+                                sed nisi eleifend.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="col-md-4 col-12 wapper wow zoomIn">
+                        <div class="item__detail text-center">
+                            <div class="item__icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <h4>CLEAN CODE</h4>
+                            <p class="subTitle">
+                                Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent
+                                sed nisi eleifend.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="slogan"></section>
     <section class="feature"></section>
     <section class="number"></section>
@@ -493,6 +708,33 @@
                 $(".skillBar.skill3").css("width", "75%");
                 $(".numberProcessBar.number3").css("width", "75%");
             }
+        });
+    </script>
+    <!-- script for isotope -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script>
+        var $grid = $(".grid").isotope({
+            itemSelector: '.grid-item',
+            layoutMode: 'fitRows'
+        });
+        $(".nav-item a").click(function () {
+            var value = $(this).attr('data-name');
+            $grid.isotope({
+                filter: value,
+            });
+        });
+    </script>
+    <!-- script for maganific popup -->
+    <script src="./js/jquery.magnific-popup.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.popup-gallery').magnificPopup({
+                delegate: 'a', // the selector for gallery item
+                type: 'image',
+                gallery: {
+                    enabled: true
+                }
+            });
         });
     </script>
 </body>

@@ -19,21 +19,59 @@
     }
     .tab__content{
         padding: 0 $pd-4; 
-        padding-top: $pd-4;
+        padding-top: $pd-5  ;
         .content__item{
+            padding-bottom: $pd-4*2;
             .item__img{
-                background-color: red;
                 position: relative;
                 &:hover{
                     .item__hover{
                         opacity: 1;
                         border-color:$color-black-5;
+                        .hover__top,.hover__bottom{
+                            transform: translateY(0);
+                        }
                     }
                 }
             }
             img{
                 width: 100%;
             }
+            //con cua item__hover
+            .text__hover{
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                @include text($color-black-2,$fs-1,$fw-normal);
+                text-decoration: none;
+                transition: all .5s;
+                &:hover{
+                    text-decoration: none;
+                    color: $color-yellow-1;
+                }
+            }
+            //con cua item__hover
+            .subText{
+                @include text($color-grey-11,$fs-2,$fw-normal);
+                padding-top: $pd-4;
+                display: inline-block;
+            }
+            //con cua item__hover
+            .porfolio__logo{
+                @include text($color-black-1,$fs-4,$fw-normal);
+                padding: ($pd-3+10) 0 ($pd-3 - 10) 0;
+                display: block;
+            }
+            //con cua item__hover
+            .hover__top{
+                transform: translateY(-20px);
+                transition: all .5s;
+            }
+            //con cua item__hover
+            .hover__bottom{
+                transform: translateY(20px);
+                transition: all .5s;
+            }
         }
     }
 }
+

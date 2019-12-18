@@ -1,3 +1,6 @@
+.btn-black,.btn-white,.btn-grey,.btn-grey-small{
+    text-transform: uppercase;
+}
 .btn-black{
     @include createButton($color-white-1,$color-black-2,$pd-6,$pd-3,transparent);
     &:hover{
