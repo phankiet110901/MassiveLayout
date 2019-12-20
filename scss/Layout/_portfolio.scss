@@ -22,6 +22,8 @@
         padding-top: $pd-5  ;
         .content__item{
             padding-bottom: $pd-4*2;
+            padding-left: $pd-4;
+            padding-right: $pd-4;
             .item__img{
                 position: relative;
                 &:hover{

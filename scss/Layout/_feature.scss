@@ -1,0 +1,32 @@
+.feature{
+    .feature__content{ 
+        .content__wapper{
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .item__detail{
+            padding: 0 $pd-3;
+            padding-bottom: $pd-5 - 10;
+            .item__number{
+                @include text($color-grey-6,$fs-4,$fw-normal);
+            }
+            .item__name{
+                text-transform: uppercase;
+                @include text($color-black-1,$fs-3,$fw-normal);
+                padding-bottom: $pd-4 *2;
+            }
+            .item__text{
+                @include text($color-grey-1,$fs-1,$fw-normal);
+            }
+            .btn-black{
+                margin-right: $pd-4 * 2;
+            }
+        }
+        .content__img{
+            padding: 0 $pd-3;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

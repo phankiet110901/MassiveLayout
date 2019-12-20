@@ -358,7 +358,9 @@ header {
   padding: 0 10px;
   padding-top: 60px; }
   .myPortfolio__content .tab__content .content__item {
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px; }
     .myPortfolio__content .tab__content .content__item .item__img {
       position: relative; }
       .myPortfolio__content .tab__content .content__item .item__img:hover .item__hover {
@@ -489,5 +491,70 @@ header {
     position: absolute;
     bottom: 20px;
     right: 0; }
+
+.feature .feature__content .content__wapper {
+  padding-left: 0;
+  padding-right: 0; }
+.feature .feature__content .item__detail {
+  padding: 0 30px;
+  padding-bottom: 50px; }
+  .feature .feature__content .item__detail .item__number {
+    color: #e1e1e1;
+    font-size: 36px;
+    font-weight: 400; }
+  .feature .feature__content .item__detail .item__name {
+    text-transform: uppercase;
+    color: #333;
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 20px; }
+  .feature .feature__content .item__detail .item__text {
+    color: #7e7e7e;
+    font-size: 15px;
+    font-weight: 400; }
+  .feature .feature__content .item__detail .btn-black {
+    margin-right: 20px; }
+.feature .feature__content .content__img {
+  padding: 0 30px; }
+  .feature .feature__content .content__img img {
+    width: 100%; }
+
+.number {
+  background-image: url("../img/bgNumber.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+  .number .item__detail {
+    display: flex;
+    align-items: center;
+    padding: 100px 0; }
+    .number .item__detail .detail__icon {
+      position: relative; }
+      .number .item__detail .detail__icon i {
+        color: #fff;
+        font-size: 36px;
+        font-weight: 400;
+        padding-right: 60px; }
+      .number .item__detail .detail__icon::before {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 1px;
+        width: 100%;
+        background-color: white;
+        transform: rotate(120deg);
+        margin-left: 30px;
+        right: -20%;
+        top: 70%; }
+    .number .item__detail .detail__text .detail__number {
+      color: #fff;
+      font-size: 36px;
+      font-weight: 400; }
+    .number .item__detail .detail__text .detail__name {
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 400; }
 
 /*# sourceMappingURL=index.css.map */

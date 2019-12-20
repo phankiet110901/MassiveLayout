@@ -1,0 +1,40 @@
+.number{
+    background-image: url("../img/bgNumber.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    .item__detail{
+        display: flex;
+        align-items: center;
+        padding: $pd-2 0;
+        .detail__icon{
+            position: relative;
+            i{
+                @include text($color-white-1,$fs-4,$fw-normal);
+                padding-right:$pd-5;
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                display: block;
+                height: 1px;
+                width: 100%;
+                background-color: white;
+                transform: rotate(120deg);
+                margin-left: $pd-3;
+                right:-20%;
+                top: 70%;
+            }
+        }
+        .detail__text{
+            .detail__number{
+                @include text($color-white-1,$fs-4,$fw-normal);
+            }
+            .detail__name{
+                text-transform: uppercase;
+                @include text($color-white-1,$fs-1,$fw-normal);
+            }
+        }
+    }
+}
