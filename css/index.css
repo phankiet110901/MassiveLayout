@@ -415,38 +415,79 @@ header {
       font-size: 24px;
       font-weight: 400; }
 
-.services .wapper {
-  padding-right: 0 !important;
-  padding-left: 0 !important; }
-.services .item__detail {
-  padding: 50px;
-  border: 1px solid #f2f2f2;
-  transition: all .5s; }
-  .services .item__detail:hover {
-    background-color: #222; }
-    .services .item__detail:hover .item__icon {
-      color: #d6b161;
+.services {
+  padding-bottom: 100px; }
+  .services .wapper {
+    padding-right: 0 !important;
+    padding-left: 0 !important; }
+  .services .item__detail {
+    padding: 50px;
+    border: 1px solid #f2f2f2;
+    transition: all .5s; }
+    .services .item__detail:hover {
+      background-color: #222; }
+      .services .item__detail:hover .item__icon {
+        color: #d6b161;
+        font-size: 36px;
+        font-weight: 400; }
+      .services .item__detail:hover h4 {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+        text-transform: uppercase; }
+    .services .item__detail .item__icon {
+      color: #333;
       font-size: 36px;
-      font-weight: 400; }
-    .services .item__detail:hover h4 {
-      color: #fff;
+      font-weight: 400;
+      padding-bottom: 15px;
+      transition: all .5s; }
+    .services .item__detail .subTitle {
+      padding-bottom: 0;
+      padding-top: 20px; }
+    .services .item__detail h4 {
+      color: #333;
       font-size: 18px;
       font-weight: 400;
-      text-transform: uppercase; }
-  .services .item__detail .item__icon {
-    color: #333;
-    font-size: 36px;
-    font-weight: 400;
-    padding-bottom: 15px;
-    transition: all .5s; }
-  .services .item__detail .subTitle {
-    padding-bottom: 0;
-    padding-top: 20px; }
-  .services .item__detail h4 {
-    color: #333;
-    font-size: 18px;
-    font-weight: 400;
-    text-transform: uppercase;
-    transition: all .5s; }
+      text-transform: uppercase;
+      transition: all .5s; }
+
+.slogan {
+  background-image: url("./../img/bgSlogan.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+  .slogan .slogan__content {
+    position: relative;
+    padding-top: 60px; }
+    .slogan .slogan__content .item__img {
+      padding-right: 60px; }
+      .slogan .slogan__content .item__img img {
+        width: 100%; }
+    .slogan .slogan__content .item__text {
+      display: flex;
+      align-items: center; }
+      .slogan .slogan__content .item__text h4 {
+        color: #d6b161;
+        font-size: 18px;
+        font-weight: 400;
+        padding-bottom: 30px; }
+      .slogan .slogan__content .item__text p {
+        color: #fff;
+        font-size: 15px;
+        font-weight: 400;
+        font-style: italic;
+        line-height: 30px;
+        padding-bottom: 30px; }
+      .slogan .slogan__content .item__text .item__btn span {
+        color: #fff;
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: 2px; }
+  .slogan .owl-dots {
+    justify-content: end;
+    position: absolute;
+    bottom: 20px;
+    right: 0; }
 
 /*# sourceMappingURL=index.css.map */

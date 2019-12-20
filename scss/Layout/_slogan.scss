@@ -1,0 +1,43 @@
+.slogan{
+    background-image: url('./../img/bgSlogan.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    .slogan__content{
+        position: relative;
+        padding-top: $pd-5;
+        .item__img{
+            padding-right: $pd-5;
+            img{
+                width: 100%;
+            }
+        }
+        .item__text{
+            display: flex;
+            align-items: center;
+            h4{
+                @include text($color-yellow-1,$fs-3,$fw-normal);
+                padding-bottom: $pd-3;
+            }
+            p{
+                @include text($color-white-1,$fs-1,$fw-normal);
+                font-style: italic;
+                line-height: 30px;
+                padding-bottom: $pd-3;
+            }
+            .item__btn{
+                span{
+                    @include text($color-white-1,$fs-2,$fw-normal);
+                    letter-spacing: 2px;
+                }
+            }
+        }
+    }
+    .owl-dots{
+        justify-content: end;
+        position: absolute;
+        bottom: 20px;
+        right: 0;
+    }
+}
