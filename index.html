@@ -760,37 +760,37 @@
         <div class="number__content container">
             <div class="row">
                 <!-- item -->
-                <div class="col-4">
+                <div class="col-md-4 col-12">
                     <div class="item__detail">
                         <div class="detail__icon">
                             <i class="fa fa-smile"></i>
                         </div>
                         <div class="detail__text">
-                            <p class="detail__number">36</p>
+                            <p class="detail__number counter">36</p>
                             <p class="detail__name">CLIENTS HANDLED</p>
                         </div>
                     </div>
                 </div>
                 <!-- item -->
-                <div class="col-4">
+                <div class="col-md-4 col-12">
                     <div class="item__detail">
                         <div class="detail__icon">
                             <i class="fa fa-flag"></i>
                         </div>
                         <div class="detail__text">
-                            <p class="detail__number">29</p>
+                            <p class="detail__number counter">29</p>
                             <p class="detail__name">PROJECT COMPLETED</p>
                         </div>
                     </div>
                 </div>
                 <!-- item -->
-                <div class="col-4">
+                <div class="col-md-4 col-12">
                     <div class="item__detail">
                         <div class="detail__icon">
                             <i class="fab fa-angellist"></i>
                         </div>
                         <div class="detail__text">
-                            <p class="detail__number">17</p>
+                            <p class="detail__number counter">17</p>
                             <p class="detail__name">DESIGN AWARD WON</p>
                         </div>
                     </div>
@@ -798,7 +798,98 @@
             </div>
         </div>
     </section>
-    <section class="blog"></section>
+    <section class="blog">
+        <h3 class="title">blog</h3>
+        <p class="subTitle">
+            Phasellus fringilla suscipit risus nec eleifend. Pellentesque eu quam sem, ac malesuada leo sem quam
+            pellente. <br> Awesome sliders give you the opportunity to showcase your content.
+        </p>
+        <div class="blog__content container">
+            <div class="row">
+                <!-- item -->
+                <div class="col-4 wapper__item">
+                    <div class="content__item">
+                        <img src="./img/blog1.jpg" alt="">
+                        <div class="item__footer"></div>
+                    </div>
+                </div>
+                <!-- item -->
+                <div class="col-4 wapper__item">
+                    <div class="content__item">
+                        <div class="item__text">
+                            <div class="text__top">
+                                <h4 class="text__title">
+                                    <a href="#">
+                                        MAURIS QUIS TVELIT LOREM. NAM NEQUE JUSTO SUSPENDISSE
+                                    </a>
+                                </h4>
+                                <span><a href="#">
+                                        interface,
+                                    </a></span>
+                                <span><a href="#">
+                                        standard,
+                                    </a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- item -->
+                <div class="col-4 wapper__item">
+                    <div class="content__item">
+                        <img src="./img/blog2.jpg" alt="">
+                        <div class="item__footer"></div>
+                    </div>
+                </div>
+                <!-- item -->
+                <div class="col-4 wapper__item">
+                    <div class="content__item">
+                        <div class="item__text">
+                            <div class="text__top">
+                                <h4 class="text__title">
+                                    <a href="#">
+                                        MAURIS QUIS TVELIT LOREM. NAM NEQUE JUSTO SUSPENDISSE
+                                    </a>
+                                </h4>
+                                <span><a href="#">
+                                        interface,
+                                    </a></span>
+                                <span><a href="#">
+                                        standard,
+                                    </a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- item -->
+                <div class="col-4 wapper__item">
+                    <div class="content__item">
+                        <img src="./img/blog3.jpg" alt="">
+                        <div class="item__top"></div>
+                    </div>
+                </div>
+                <!-- item -->
+                <div class="col-4 wapper__item">
+                    <div class="content__item">
+                        <div class="item__text">
+                            <div class="text__top">
+                                <h4 class="text__title">
+                                    <a href="#">
+                                        MAURIS QUIS TVELIT LOREM. NAM NEQUE JUSTO SUSPENDISSE
+                                    </a>
+                                </h4>
+                                <span><a href="#">
+                                        interface,
+                                    </a></span>
+                                <span><a href="#">
+                                        standard,
+                                    </a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="comment"></section>
     <section class="videoDemo"></section>
     <section class="news"></section>
@@ -914,6 +1005,17 @@
                 gallery: {
                     enabled: true
                 }
+            });
+        });
+    </script>
+    <!-- script for coutup number -->
+    <script src="./js/jquery.waypoints.min.js"></script>
+    <script src="./js/jquery.countup.min.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $('.counter').countUp({
+                delay: 10,
+                time: 1000
             });
         });
     </script>

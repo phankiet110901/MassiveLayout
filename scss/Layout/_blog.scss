@@ -1,0 +1,76 @@
+.blog{
+    .blog__content{
+        .wapper__item{
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .content__item{
+            position: relative;
+            .item__text{
+                padding: ($pd-2 - 20) ($pd-3 + 10);
+                .text__top{
+                    position: relative;
+                    &::before{
+                        content: '';
+                        height: 1px;
+                        width: 100px;
+                        background-color: $color-black-1;
+                        position: absolute;
+                        top:15px;
+                        left: 0;
+                    }
+                }
+                //con cua text__top
+                .text__title{
+                    padding-top: $pd-3 - 5;
+                    padding-bottom: $pd-3;
+                    a{
+                        @include text($color-black-2,$fs-3,$fw-normal);
+                        transition: all .5s;
+                        &:hover{
+                            text-decoration: none;
+                            @include text($color-yellow-1,$fs-3,$fw-normal);
+                        }
+                    }
+                }
+                span{
+                    a{
+                        text-transform: uppercase;
+                        @include text($color-grey-7,$fs-6 +2,$fw-normal);
+                        padding-right: $pd-4;
+                        transition: all .5s;
+                        &:hover{
+                            @include text($color-yellow-1,$fs-6 +2,$fw-normal);
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+            img{
+                width: 100%;
+                display: block;
+            }
+
+            .item__footer{
+                height: 15px;
+                width: 15px;
+                background-color: $color-white-1;
+                position: absolute;
+                bottom: -7px;
+                left: 50%;
+                right: 50%;
+                transform: rotate(45deg);
+            }
+            .item__top{
+                height: 15px;
+                width: 15px;
+                background-color: $color-white-1;
+                position: absolute;
+                top: -7px;
+                left: 50%;
+                right: 50%;
+                transform: rotate(45deg);
+            }
+        }
+    }
+}

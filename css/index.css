@@ -524,7 +524,8 @@ header {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  padding: 100px 0; }
   .number .item__detail {
     display: flex;
     align-items: center;
@@ -556,5 +557,69 @@ header {
       color: #fff;
       font-size: 15px;
       font-weight: 400; }
+
+.blog .blog__content .wapper__item {
+  padding-left: 0;
+  padding-right: 0; }
+.blog .blog__content .content__item {
+  position: relative; }
+  .blog .blog__content .content__item .item__text {
+    padding: 80px 40px; }
+    .blog .blog__content .content__item .item__text .text__top {
+      position: relative; }
+      .blog .blog__content .content__item .item__text .text__top::before {
+        content: '';
+        height: 1px;
+        width: 100px;
+        background-color: #333;
+        position: absolute;
+        top: 15px;
+        left: 0; }
+    .blog .blog__content .content__item .item__text .text__title {
+      padding-top: 25px;
+      padding-bottom: 30px; }
+      .blog .blog__content .content__item .item__text .text__title a {
+        color: #222;
+        font-size: 18px;
+        font-weight: 400;
+        transition: all .5s; }
+        .blog .blog__content .content__item .item__text .text__title a:hover {
+          text-decoration: none;
+          color: #d6b161;
+          font-size: 18px;
+          font-weight: 400; }
+    .blog .blog__content .content__item .item__text span a {
+      text-transform: uppercase;
+      color: #909090;
+      font-size: 12px;
+      font-weight: 400;
+      padding-right: 10px;
+      transition: all .5s; }
+      .blog .blog__content .content__item .item__text span a:hover {
+        color: #d6b161;
+        font-size: 12px;
+        font-weight: 400;
+        text-decoration: none; }
+  .blog .blog__content .content__item img {
+    width: 100%;
+    display: block; }
+  .blog .blog__content .content__item .item__footer {
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    right: 50%;
+    transform: rotate(45deg); }
+  .blog .blog__content .content__item .item__top {
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    position: absolute;
+    top: -7px;
+    left: 50%;
+    right: 50%;
+    transform: rotate(45deg); }
 
 /*# sourceMappingURL=index.css.map */
