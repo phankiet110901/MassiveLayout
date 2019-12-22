@@ -535,6 +535,7 @@
                 </div>
             </div>
         </div>
+        <div style="clear: both;"></div>
     </section>
     <section class="banner">
         <div class="banner__content container">
@@ -973,18 +974,53 @@
     </section>
     <section class="news">
         <div class="row">
-            <div class="col-6 news__wapper">
+            <div class="col-12 col-md-6 news__wapper">
+                <!-- item -->
                 <div class="news__item">
                     <img src="./img/news1.jpg" alt="">
                     <div class="news__text">
-                        
+                        <p class="item__title">news</p>
+                        <a href="#" class="item__link">SOME SERVICES THAT WE PROVIDE OCCATIONALY</a>
+                        <p class="item__detail">
+                            Phasellus fringilla suscipit risus nec eleifend. Pellentesque eu quam sem, ac malesuada leo
+                            sem quam pellente. Awesome sliders give you the opportunity to showcase your content.
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="col-6 news__wapper"></div>
+            <div class="col-12 col-md-6 news__wapper">
+                <!-- item -->
+                <div class="news__item">
+                    <img src="./img/news2.jpg" alt="">
+                    <div class="news__text">
+                        <p class="item__title">news</p>
+                        <a href="#" class="item__link">EDITORS NOW USE AS THEIR DEFAULT MODEL</a>
+                        <p class="item__detail">
+                            Fringilla suscipit risus nec eleifend. Pellentesque eu quam sem, ac malesuada leo sem quam pellente. Awesome sliders give you the opportunity to showcase your content.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <section class="priceTable"></section>
+    <section class="priceTable">
+        <h3 class="title">PRICE TABLE</h3>
+        <p class="subTitle">
+            Phasellus fringilla suscipit risus nec eleifend. Pellentesque eu quam sem, ac malesuada leo sem quam pellente. <br> Awesome sliders give you the opportunity to showcase your content.
+        </p>
+        <div class="priceTable__content container">
+            <div class="row">
+                <!-- item -->
+                <div class="col-4">
+                    <div class="item__detail">
+                        <h4 class="item__title text-uppercase">starter</h4>
+                    </div>
+                </div>
+                <div class="col-4"></div>
+                <div class="col-4"></div>
+            </div>
+        </div>
+    </section>
     <section class="subscibe"></section>
     <section class="partners"></section>
     <section class="contact"></section>
@@ -1068,7 +1104,10 @@
     <script>
         var $grid = $(".grid").isotope({
             itemSelector: '.grid-item',
-            layoutMode: 'fitRows'
+            layoutMode: 'fitRows',
+            masonry: {
+                columnWidth: 200
+            }
         });
         $(".nav-item a").click(function () {
             var value = $(this).attr('data-name');
