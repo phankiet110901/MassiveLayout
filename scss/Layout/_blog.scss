@@ -72,5 +72,17 @@
                 transform: rotate(45deg);
             }
         }
+        .blog__link{
+            padding-top: $pd-5 - 10;
+            .link__text{
+                @include text($color-grey-12,$fs-1,$fw-normal);
+                transition: all .5s;
+                letter-spacing: 2px;
+                &:hover{
+                    @include text($color-black-2,$fs-1,$fw-normal);
+                    text-decoration: none;
+                }
+            }
+        }
     }
 }

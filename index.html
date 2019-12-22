@@ -888,11 +888,102 @@
                     </div>
                 </div>
             </div>
+            <!-- link -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="blog__link text-uppercase text-center">
+                        <a href="#" class="link__text">view all blog
+                            <i class="fa fa-long-arrow-alt-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <section class="comment"></section>
-    <section class="videoDemo"></section>
-    <section class="news"></section>
+    <section class="comment">
+        <div class="comment__wapper owl-carousel owl-theme">
+            <!-- item -->
+            <div class="comment__content item">
+                <div class="comment__img">
+                    <img src="./img/worker1.jpg" alt="">
+                </div>
+                <div class="comment__info text-center">
+                    <p class="comment__text">
+                        Nam nec dui dolor. Curabitur in laoreet erat. Nam nec dui dolor. Aliquam varius dolor nunc,
+                        interdum
+                        <br> commodo justoporttitor vitae. Quisque fermentum purus.
+                    </p>
+                    <p class="comment__name">
+                        - Linda Smith -
+                    </p>
+                    <p class="comment__job">
+                        CEO, TB
+                    </p>
+                </div>
+            </div>
+            <!-- item -->
+            <div class="comment__content item">
+                <div class="comment__img">
+                    <img src="./img/worker2.jpg" alt="">
+                </div>
+                <div class="comment__info text-center">
+                    <p class="comment__text">
+                        Vestibulum varius fermentum risus vitae lacinia neque auctor nec. Nunc ac rutrum nulla. <br>
+                        Nulla maximus dolor in quam euismod ac viverra libero aliquet.
+                    </p>
+                    <p class="comment__name">
+                        - John Doe -
+                    </p>
+                    <p class="comment__job">
+                        head of marketing, TB
+                    </p>
+                </div>
+            </div>
+            <!-- item -->
+            <div class="comment__content item">
+                <div class="comment__img">
+                    <img src="./img/worker1.jpg" alt="">
+                </div>
+                <div class="comment__info text-center">
+                    <p class="comment__text">
+                        Vestibulum varius fermentum risus vitae lacinia neque auctor nec. Nunc ac rutrum nulla. <br>
+                        Nulla maximus dolor in quam euismod ac viverra libero aliquet.
+                    </p>
+                    <p class="comment__name">
+                        - Kevin Paige -
+                    </p>
+                    <p class="comment__job">
+                        abc
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="videoDemo">
+        <h3 class="title">WATCH VIDEO DEMO</h3>
+        <p class="subTitle">
+            Phasellus fringilla suscipit risus nec eleifend. Pellentesque eu quam sem, ac malesuada leo sem quam
+            pellente. <br> Awesome sliders give you the opportunity to showcase your content.
+        </p>
+        <div class="video wow zoomIn">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CevxZvSJLk8" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+    <section class="news">
+        <div class="row">
+            <div class="col-6 news__wapper">
+                <div class="news__item">
+                    <img src="./img/news1.jpg" alt="">
+                    <div class="news__text">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 news__wapper"></div>
+        </div>
+    </section>
     <section class="priceTable"></section>
     <section class="subscibe"></section>
     <section class="partners"></section>
@@ -1018,6 +1109,28 @@
                 time: 1000
             });
         });
+    </script>
+    <!-- script for comment -->
+    <script>
+        $('.comment__wapper').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
     </script>
 </body>
 

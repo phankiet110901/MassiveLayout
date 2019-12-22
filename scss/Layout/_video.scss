@@ -1,0 +1,10 @@
+.videoDemo{
+    .video{
+        margin: 0 auto;
+        width: 40%;
+        padding-bottom: $pd-2 + $pd-3;
+        iframe{
+            width: 100%;
+        }
+    }
+}

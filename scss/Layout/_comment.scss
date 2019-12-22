@@ -1,0 +1,44 @@
+.comment{
+    padding: $pd-2 0;
+    padding-bottom: 0;
+    .comment__wapper{
+        background-image: url('../img/bgComment.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        padding: $pd-2 0;
+        .comment__content{
+            width: 60%;
+            margin: 0 auto;
+            .comment__img{
+                height: 100px;
+                width: 100px;
+                margin: 0 auto;
+                margin-bottom: $pd-5 - 10;
+                img{
+                    width: 100%;
+                    display: block;
+                    border-radius: 50%;
+                }
+            }
+            .comment__text{
+                @include text($color-white-1,$fs-1,$fw-normal);
+                font-style: italic;
+            }
+            .comment__name{
+                @include text($color-white-1,$fs-1,$fw-normal);
+                text-transform: uppercase;
+                padding-top: $pd-4;
+                letter-spacing: 2px;
+            }
+            .comment__job{
+                text-transform: uppercase;
+                @include text($color-white-1,($fs-6 + 2),$fw-normal);
+            }
+        }
+        .owl-dots{
+            padding-top: $pd-4 * 2;
+        }
+    }
+}
