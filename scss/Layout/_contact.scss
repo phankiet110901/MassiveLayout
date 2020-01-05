@@ -1,0 +1,31 @@
+.contact{
+    padding-top: $pd-2;
+    .contact__content{
+        background-image: url('../img/bgContact.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        .contact__detail{
+            padding: ($pd-2 + 50) 0 ;
+        }
+        // con cua contact__detail
+        .detail__icon{
+            i{  
+                @include text($color-white-1,$fs-4,$fw-normal);
+            }
+        }
+        // con cua contact__detail
+        .detail__title{
+            @include text($color-white-1,$fs-3,$fw-normal);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: $pd-3 0 ( $pd-3 - 10) 0;
+        }
+        // con cua contact__detail
+        .detail__text{
+            @include text($color-white-1,$fs-1,$fw-normal);
+            letter-spacing: 1px;
+        }
+    }
+}

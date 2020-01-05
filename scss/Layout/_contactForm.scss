@@ -1,0 +1,8 @@
+.contactForm{
+    padding-bottom: $pd-2;
+    .btn-black{
+        margin-top: 6px;
+        padding: ($pd-4 - 4.5) ($pd-4 + 10);
+        width: 100%;
+    }
+}

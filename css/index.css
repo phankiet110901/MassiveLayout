@@ -16,6 +16,9 @@ p, h4, h3 {
   margin-left: 0;
   margin-right: 0; }
 
+.btn:focus {
+  box-shadow: none; }
+
 .btn-black, .btn-white, .btn-grey, .btn-grey-small {
   text-transform: uppercase; }
 
@@ -91,7 +94,7 @@ p, h4, h3 {
 
 header {
   position: fixed;
-  z-index: 999;
+  z-index: 9998;
   width: 100%;
   transition: all .5s; }
   header .navbar {
@@ -717,5 +720,135 @@ header {
       color: #fff;
       font-size: 15px;
       font-weight: 400; }
+
+.priceTable .btn {
+  border-radius: 0; }
+.priceTable .priceTable__content {
+  text-align: center; }
+  .priceTable .priceTable__content .item__detail {
+    border: 1px solid #e8e8e8;
+    padding: 50px; }
+    .priceTable .priceTable__content .item__detail .item__title {
+      color: #333;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 2px;
+      padding-bottom: 30px; }
+    .priceTable .priceTable__content .item__detail .price {
+      padding: 25px 0;
+      margin-bottom: 40px;
+      border-top: 1px solid #e5e5e5;
+      border-bottom: 1px solid #e5e5e5; }
+      .priceTable .priceTable__content .item__detail .price .item__money {
+        color: #333;
+        font-size: 36px;
+        font-weight: 400; }
+        .priceTable .priceTable__content .item__detail .price .item__money span {
+          color: #333;
+          font-size: 16px;
+          font-weight: 400; }
+      .priceTable .priceTable__content .item__detail .price .item__time {
+        color: #333;
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase; }
+    .priceTable .priceTable__content .item__detail .item__list {
+      list-style: none;
+      padding-inline-start: 0; }
+      .priceTable .priceTable__content .item__detail .item__list li {
+        padding-bottom: 15px; }
+  .priceTable .priceTable__content .detail__center {
+    background-color: #222;
+    border: 1px solid #222; }
+    .priceTable .priceTable__content .detail__center .item__title {
+      color: #d6b161;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 2px;
+      padding-bottom: 30px; }
+    .priceTable .priceTable__content .detail__center .price {
+      padding: 25px 0;
+      margin-bottom: 40px;
+      border-top: 1px solid #e5e5e5;
+      border-bottom: 1px solid #e5e5e5; }
+      .priceTable .priceTable__content .detail__center .price .item__money {
+        color: #fff;
+        font-size: 36px;
+        font-weight: 400; }
+        .priceTable .priceTable__content .detail__center .price .item__money span {
+          color: #fff;
+          font-size: 16px;
+          font-weight: 400; }
+      .priceTable .priceTable__content .detail__center .price .item__time {
+        color: #fff;
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase; }
+    .priceTable .priceTable__content .detail__center .item__list {
+      list-style: none;
+      padding-inline-start: 0; }
+      .priceTable .priceTable__content .detail__center .item__list li {
+        padding-bottom: 15px;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 400; }
+    .priceTable .priceTable__content .detail__center .btn-white:hover {
+      background-color: #d6b161; }
+
+.subscribe {
+  margin-top: 100px;
+  padding-bottom: 100px;
+  background-color: #f8f8f8; }
+  .subscribe .title {
+    color: #d6b161;
+    padding-bottom: 10px; }
+  .subscribe .subTitle {
+    padding-bottom: 50px; }
+  .subscribe .subscribe__form {
+    width: 40%;
+    margin: 0 auto; }
+    .subscribe .subscribe__form .form-control.form__input {
+      padding: 28px 15px;
+      display: inline-block;
+      border: none; }
+      .subscribe .subscribe__form .form-control.form__input:focus {
+        box-shadow: none; }
+
+.contact {
+  padding-top: 100px; }
+  .contact .contact__content {
+    background-image: url("../img/bgContact.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; }
+    .contact .contact__content .contact__detail {
+      padding: 150px 0; }
+    .contact .contact__content .detail__icon i {
+      color: #fff;
+      font-size: 36px;
+      font-weight: 400; }
+    .contact .contact__content .detail__title {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 30px 0 20px 0; }
+    .contact .contact__content .detail__text {
+      color: #fff;
+      font-size: 15px;
+      font-weight: 400;
+      letter-spacing: 1px; }
+
+.contactForm {
+  padding-bottom: 100px; }
+  .contactForm .btn-black {
+    margin-top: 6px;
+    padding: 5.5px 20px;
+    width: 100%; }
+
+.footer {
+  background-color: #f8f8f8; }
 
 /*# sourceMappingURL=index.css.map */

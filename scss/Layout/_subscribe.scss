@@ -1,0 +1,26 @@
+.subscribe{
+    margin-top: $pd-2;
+    padding-bottom: $pd-2;
+    background-color: $color-white-4;
+    .title{
+        color: $color-yellow-1;
+        padding-bottom: $pd-4;
+    }
+    .subTitle{
+        padding-bottom: $pd-5 - 10;
+    }
+
+    .subscribe__form{
+        width: 40%;
+        margin: 0 auto;
+        .form-control.form__input{
+            padding: ($pd-3 - 2) $pd-6;
+            display: inline-block;
+            border:none;
+            &:focus{
+               box-shadow: none;
+            }   
+        }
+    }
+
+}
