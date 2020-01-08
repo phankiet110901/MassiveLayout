@@ -1,3 +1,32 @@
 .footer{
     background-color: $color-white-4;
+    .subTitle{
+        @include text($color-black-2,($fs-6 + 2),$fw-normal);
+        letter-spacing: 2px;
+        padding-bottom: 0;
+    }
+    .footer__icon{
+        padding: ($pd-2 - 20) 0;
+        a{
+            @include text($color-black-1,$fs-5,$fw-normal);
+            height: 40px;
+            width: 40px;
+            border:1px solid $color-black-1;
+            display: inline-block;
+            line-height: 40px;
+            border-radius: 50%;
+            margin: 0 $pd-4;
+            transition: all .5s;
+            &:hover{
+                color: $color-white-1;
+                background-color: $color-black-1;
+            }
+        }
+    }
+    .footer__text{
+        text-align: center;
+        @include text($color-black-1,($fs-1 - 1),$fw-normal);
+        letter-spacing: 2px;
+        padding-bottom: ($pd-2 - 20);
+    }
 }

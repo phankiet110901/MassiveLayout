@@ -850,5 +850,35 @@ header {
 
 .footer {
   background-color: #f8f8f8; }
+  .footer .subTitle {
+    color: #222;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding-bottom: 0; }
+  .footer .footer__icon {
+    padding: 80px 0; }
+    .footer .footer__icon a {
+      color: #333;
+      font-size: 24px;
+      font-weight: 400;
+      height: 40px;
+      width: 40px;
+      border: 1px solid #333;
+      display: inline-block;
+      line-height: 40px;
+      border-radius: 50%;
+      margin: 0 10px;
+      transition: all .5s; }
+      .footer .footer__icon a:hover {
+        color: #fff;
+        background-color: #333; }
+  .footer .footer__text {
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding-bottom: 80px; }
 
 /*# sourceMappingURL=index.css.map */
