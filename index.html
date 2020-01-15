@@ -1201,7 +1201,7 @@
                         </div>
                         <div class="form-group ">
                             <button class="btn btn-black">send message</button>
-                         </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1209,7 +1209,7 @@
     </section>
     <section class="footer">
         <h3 class="title wow zoomIn">
-            <img src="./img/logo.png"  alt="">
+            <img src="./img/logo.png" alt="">
         </h3>
         <p class="subTitle">THE ULTIMATE THEME WITH MASSIVE COLLECTION</p>
         <div class="footer__icon text-center">
@@ -1297,6 +1297,22 @@
                 $(".numberProcessBar.number3").css("width", "75%");
             }
         });
+    </script>
+    <!-- script for change color when scroll -->
+    <script>
+        let offSetAbout = $('.about').offset().top;
+        console.log("vi tri: " + offSetAbout);
+        let height = $(window).height();
+        //console.log(height);
+        let scroll = $(window).scrollTop();
+        console.log("da cuon");
+        console.log(scroll);
+        
+        
+        if(scroll > offSetAbout){
+            console.log("about");
+        }
+        
     </script>
     <!-- script for isotope -->
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
